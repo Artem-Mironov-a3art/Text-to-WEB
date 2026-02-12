@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="/">Text to WEB</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/">Главная</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+             {% block content %}{% endblock %}
+        </main>
+        <footer class="footer">
+            <p>&copy; 2026 Doc to WEB. Конвертер текста в статические сайты.</p>
+        </footer>
+    </body>
+</html>
